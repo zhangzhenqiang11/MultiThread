@@ -88,7 +88,10 @@ public class BlockingQueueTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("start");
 		pool.shutdown();
+//		pool.shutdownNow();
+		System.out.println("end  :   "+pool.isTerminated()+"  "+pool.isShutdown());
 	}
 	
 	public static void main(String[] args) {
